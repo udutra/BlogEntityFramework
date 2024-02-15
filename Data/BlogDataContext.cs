@@ -15,7 +15,7 @@ public class BlogDataContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
         options.UseSqlServer(
-            "Server=localhost,1433;Database=Blog;User ID=sa;Password=Dutra140391;TrustServerCertificate=True");
+            "Server=localhost,1433;Database=BlogFluentMap;User ID=sa;Password=Dutra140391;TrustServerCertificate=True");
         //options.LogTo(Console.WriteLine);
     }
 

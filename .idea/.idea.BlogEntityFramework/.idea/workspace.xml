@@ -8,21 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706a187b-672c-4542-8e95-dfa73394634d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BlogEntityFramework/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Mappings/CategoryMap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Mappings/PostMap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Mappings/UserMap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20240215220108_InitialCreation.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20240215220108_InitialCreation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/BlogDataContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlogEntityFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlogEntityFramework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogEntityFramework.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlogEntityFramework.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/BlogDataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/BlogDataContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Post.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/PostTag.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Tag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Tag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/UserRole.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Mappings/PostMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Mappings/PostMap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +40,10 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/BlogDataContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/CategoryMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/PostMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/PostMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Models/Category.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -68,10 +65,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Project.BlogEntityFramework.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -118,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707856907505</updated>
       <workItem from="1707856912508" duration="86000" />
-      <workItem from="1708027349603" duration="5169000" />
+      <workItem from="1708027349603" duration="7132000" />
     </task>
     <servers />
   </component>
@@ -127,6 +124,7 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

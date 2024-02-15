@@ -17,7 +17,8 @@ public static class Program
             PasswordHash = "123098457",
             Bio = "9x Microsoft MVP",
             Image = "https://balta.io",
-            Slug = "guilherme-dutra"
+            Slug = "guilherme-dutra",
+            Github = "guilhermedutra"
         };
         
         context.Users.Add(user);
@@ -31,7 +32,7 @@ public static class Program
             Category = new Category
             {
               Name  = "BackEnd",
-              Slug = "bacend"
+              Slug = "backend"
             },
             CreateDate = System.DateTime.Now,
             //LastUpdateDate

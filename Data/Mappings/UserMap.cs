@@ -55,6 +55,12 @@ public class UserMap :IEntityTypeConfiguration<User>
             .HasColumnType("VARCHAR")
             .HasMaxLength(80);
         
+        builder.Property(x => x.Github)
+            .IsRequired() //Gera um NOT NULL
+            .HasColumnName("Github")
+            .HasColumnType("VARCHAR")
+            .HasMaxLength(255);
+        
         //Índices
         builder.HasIndex(x => x.Slug, "IX_User_Slug")
             .IsUnique();
@@ -63,7 +69,7 @@ public class UserMap :IEntityTypeConfiguration<User>
         builder.HasMany(x => x.Roles)
             .WithMany(x => x.Users)
             .UsingEntity<Dictionary<string,object>>(
-                "PostTag",
+                "UserRole",
                 role => role.HasOne<Role>()
                     .WithMany()
                     .HasForeignKey("RoleId")
