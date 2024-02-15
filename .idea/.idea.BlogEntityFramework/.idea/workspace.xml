@@ -8,13 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706a187b-672c-4542-8e95-dfa73394634d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Migrations/20240215220108_InitialCreation.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20240215220108_InitialCreation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20240215220331_InitialCreation.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20240215220331_InitialCreation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20240215220524_usergithub.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20240215220524_usergithub.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Migrations/BlogDataContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlogEntityFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlogEntityFramework/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlogEntityFramework.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlogEntityFramework.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/BlogDataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/BlogDataContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Mappings/PostMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Mappings/PostMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Mappings/UserMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Mappings/UserMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,9 +45,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/BlogDataContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/BlogDataContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/CategoryMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/PostMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/PostMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/UserMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/UserMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/UserMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Data/Mappings/UserMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Guilherme/Documents/Github/balta/BlogEntityFramework/Models/Category.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -115,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707856907505</updated>
       <workItem from="1707856912508" duration="86000" />
-      <workItem from="1708027349603" duration="7132000" />
+      <workItem from="1708027349603" duration="7445000" />
     </task>
     <servers />
   </component>
