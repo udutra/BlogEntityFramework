@@ -10,60 +10,40 @@ public static class Program
     {
         using var context = new BlogDataContext();
 
-        /*var user = new User
+        var user = new User
         {
             Name = "Guilherme Dutra",
-            Slug = "guilherme-dutra",
             Email = "guilherme@balta.io",
+            PasswordHash = "123098457",
             Bio = "9x Microsoft MVP",
             Image = "https://balta.io",
-            PasswordHash = "123098457"
+            Slug = "guilherme-dutra"
         };
+        
+        context.Users.Add(user);
+        context.SaveChanges();
 
-        var category = new Category
-        {
-            Name = "Backend",
-            Slug = "backend"
-        };
-
+        var user2 = context.Users.FirstOrDefault();
         var post = new Post
         {
-            Author = user,
-            Category = category,
-            Body = "<p>Hello world</p>",
-            Slug = "comecando-com-ef-core",
-            Summary = "Neste artigo vamos aprender EF Core",
-            Title = "Começando com EF Core",
-            CreateDate = DateTime.Now,
-            LastUpdateDate = DateTime.Now
+            Author = user2,
+            Body = "Meu Artigo",
+            Category = new Category
+            {
+              Name  = "BackEnd",
+              Slug = "bacend"
+            },
+            CreateDate = System.DateTime.Now,
+            //LastUpdateDate
+            Slug = "meu-artigo",
+            Summary = "Neste artigo vamos conferir...",
+            //Tags=null,
+            Title = "Meu artigo"
         };
         context.Posts.Add(post);
         context.SaveChanges();
-        */
-
-        /*var posts = context
-            .Posts
-            .AsNoTracking()
-            .Include(x => x.Author)
-            .Include(x => x.Category)
-                //.ThenInclude() SubSelect
-            //.Where(x => x.AuthorId == 9)
-            .OrderByDescending(x => x.LastUpdateDate)
-            .ToList();
-
-        foreach (var post in posts)
-        {
-            Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category.Name}!");
-        }*/
         
-        var post = context
-            .Posts
-            .Include(x => x.Author)
-            .Include(x => x.Category)
-            .OrderByDescending(x => x.LastUpdateDate)
-            .FirstOrDefault();
-        post.Author.Name = "Teste";
-        context.Posts.Update(post);
-        context.SaveChanges();
+
+
     }
 }

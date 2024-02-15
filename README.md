@@ -1,2 +1,2 @@
 # BlogEntityFramework
-  Fundamentos do Entity Framework
+  Fundamentos do Entity Framework.
