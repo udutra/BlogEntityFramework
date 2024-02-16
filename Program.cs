@@ -1,60 +1,34 @@
-﻿using BlogEntityFramework.Data;
-using BlogEntityFramework.Models;
+﻿using System.Formats.Tar;
+using BlogEntityFramework.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlogEntityFramework;
 
 public static class Program
 {
-    public static async Task Main(string[] args)
+    public static void Main(string[] args)
     {
-        await using var context = new BlogDataContext();
+        //Lazy Loading
+        using var context = new BlogDataContext();
+        var posts = context.Posts;
 
-        var post = await context.Posts.ToListAsync();
-        var tags = await context.Tags.ToListAsync();
-
-        var posts = GetPosts(context);
-
-        Console.WriteLine("Teste");
-        
-        /*var user = new User
+        foreach (var post in posts)
         {
-            Name = "Guilherme Dutra",
-            Email = "guilherme@balta.io",
-            PasswordHash = "123098457",
-            Bio = "9x Microsoft MVP",
-            Image = "https://balta.io",
-            Slug = "guilherme-dutra",
-            Github = "guilhermedutra"
-        };
-
-        context.Users.Add(user);
-        context.SaveChanges();
-
-        var user2 = context.Users.FirstOrDefault();
-        var post = new Post
-        {
-            Author = user2,
-            Body = "Meu Artigo",
-            Category = new Category
+            foreach (var tag in post.Tags)
             {
-              Name  = "BackEnd",
-              Slug = "backend"
-            },
-            CreateDate = System.DateTime.Now,
-            //LastUpdateDate
-            Slug = "meu-artigo",
-            Summary = "Neste artigo vamos conferir...",
-            //Tags=null,
-            Title = "Meu artigo"
-        };
-        context.Posts.Add(post);
-        context.SaveChanges();*/
-    }
+                
+            }
+        }
+        
+        //Eager Loading
+        var posts2 = context.Posts.Include(x => x.Tags);
 
-    public static async Task<List<Post>> GetPosts(BlogDataContext context)
-    {
-        return await context.Posts.ToListAsync();
+        foreach (var post in posts2)
+        {
+            foreach (var tag in post.Tags)
+            {
+                
+            }
+        }
     }
-    
 }
