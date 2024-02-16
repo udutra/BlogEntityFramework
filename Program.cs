@@ -6,11 +6,18 @@ namespace BlogEntityFramework;
 
 public static class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
-        using var context = new BlogDataContext();
+        await using var context = new BlogDataContext();
 
-        var user = new User
+        var post = await context.Posts.ToListAsync();
+        var tags = await context.Tags.ToListAsync();
+
+        var posts = GetPosts(context);
+
+        Console.WriteLine("Teste");
+        
+        /*var user = new User
         {
             Name = "Guilherme Dutra",
             Email = "guilherme@balta.io",
@@ -20,7 +27,7 @@ public static class Program
             Slug = "guilherme-dutra",
             Github = "guilhermedutra"
         };
-        
+
         context.Users.Add(user);
         context.SaveChanges();
 
@@ -42,9 +49,12 @@ public static class Program
             Title = "Meu artigo"
         };
         context.Posts.Add(post);
-        context.SaveChanges();
-        
-
-
+        context.SaveChanges();*/
     }
+
+    public static async Task<List<Post>> GetPosts(BlogDataContext context)
+    {
+        return await context.Posts.ToListAsync();
+    }
+    
 }
